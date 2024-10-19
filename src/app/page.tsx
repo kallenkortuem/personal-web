@@ -24,7 +24,7 @@ export default async function Home() {
           {session && <ProfileMenu />}
         </div>
       </header>
-      <main className="flex flex-col gap-6 row-start-3 items-center sm:items-start pt-24">
+      <main className="flex flex-col gap-6 row-start-3 items-center sm:items-start ">
         <div>
           <h1 className="text-3xl sm:text-4xl font-bold text-center sm:text-left mb-2">
             Kallen Kortuem
@@ -33,17 +33,22 @@ export default async function Home() {
             Full-stack engineer, designer, and creator.
           </p>
         </div>
-        <ol className="">
-          <li className="mb-2">
-            learn more <Link href="/about-me">about me</Link>
-          </li>
-          <li className="mb-2">
-            explore my <Link href="/experience">experience</Link>
-          </li>
-          <li>
-            and feel free to <Link href="/contact">contact me</Link>
-          </li>
-        </ol>
+        <nav>
+          <ul className="flex gap-4">
+            <li>
+              <Link href="/">Home</Link>
+            </li>
+            <li>
+              <Link href="/about-me">About me</Link>
+            </li>
+            <li>
+              <Link href="/experience">Experience</Link>
+            </li>
+            <li>
+              <Link href="/contact">Contact</Link>
+            </li>
+          </ul>
+        </nav>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           <a
